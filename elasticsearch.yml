@@ -30,11 +30,11 @@ node.name: node-1
 #
 # Path to directory where to store the data (separate multiple locations by comma):
 #
-path.data: /mnt/elasticsearch/lib
+path.data: /mnt/elastic/lib
 #
 # Path to log files:
 #
-path.logs: /mnt/elasticsearch/log
+path.logs: /mnt/elastic/log
 #
 # ----------------------------------- Memory -----------------------------------
 #
