@@ -1,0 +1,5 @@
+#!/bin/bash
+sed -i 's/node.name: node-1/node.name: $hostname/g' /etc/elasticsearch/elasticsearch.yml
+ip=ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1  -d'/'
+sed -i 's/network.host: 192.168.0.1/network.host: $ip/g' /etc/elasticsearch/elas
+ticsearch.yml
